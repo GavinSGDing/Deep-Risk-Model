@@ -6,4 +6,4 @@ df = df.sort_values(by=['Company', 'Date'])
 new_order = ['Company', 'Date', 'Open', 'High', 'Low', 'Close', 'Volume', 'Dividends', 'Stock Splits']
 df = df[new_order]
 df['Return'] = df.groupby('Company')['Close'].pct_change()
-df.to_csv('sp500.csv', index=False)
+df.to_csv('Return_500.csv', index=False)

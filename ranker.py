@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv('sp500.csv') # r"absolute path"
+df = pd.read_csv('Return_500.csv') # r"absolute path"
 df['Date'] = pd.to_datetime(df['Date'], utc=True)
 
 df['Date'] = df['Date'].dt.strftime('%Y-%m-%d')
@@ -16,4 +16,4 @@ def assign_feature(group):
 
 df = df.groupby('Date').apply(assign_feature).reset_index(drop=True)
 df = df.sort_values(by=['Company', 'Date'])
-df.to_csv('final_sp500.csv', index=False) # r"absolute path"
+df.to_csv('Big_500.csv', index=False) # r"absolute path"

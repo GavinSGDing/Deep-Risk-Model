@@ -1,2 +1,2 @@
-Replication of "Deep Risk Model: A Deep Learning Solution for Mining Latent
+Replication and revision of "Deep Risk Model: A Deep Learning Solution for Mining Latent
 Risk Factors to Improve Covariance Matrix Estimation"
